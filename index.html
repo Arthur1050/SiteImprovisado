@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meu site</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        body {
+            background-color: #ceabba;
+        }
+
+        .containner {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            height: 150px;
+            background-color: #a66a85;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            width: 25em;
+            height: 1em;
+            display: inline;
+            padding: 10px 15px 10px 15px;
+            border-width: 2px 1px;
+            border-style: solid;
+            border-color: #2e071f;
+            color: #2e071f;
+            border-radius: 3px;
+            transition: 0.5s;
+            font-weight: 600;
+            background-color: #a66a85;
+        }
+
+        .header:hover {
+            width: 30em;
+            border-radius: 3px;
+            background-color: #ac8295;
+        }
+
+        .menuzera {
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            align-items: end;
+            /* gap: 5px; */
+        }
+
+        .logo {
+            padding-top: 18.25px;
+            width: 400px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="containner">
+            <img class="logo" src="./improvisa.png" alt="Logo">
+            <div class="menuzera">
+                <div class="header" id="menu">Menu</div>
+                <div class="header" id="masculino">Masculino</div>
+                <div class="header" id="feminino">Feminino</div>
+                <div class="header" id="acessorios">Acessorios</div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
